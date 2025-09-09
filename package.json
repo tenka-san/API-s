@@ -1,0 +1,19 @@
+{
+  "name": "Base API",
+  "version": "1.2.5",
+  "type": "md",
+  "main": "./index.js",
+  "script": {
+    "start": "node ./index.js",
+  },
+  "depencies": {
+    "@whiskeysockets/baileys": "npm:@shennmine/baileys",
+    "@cacheable/node-cache": "1.7.0",
+    "@hapi/boom": "^10.0.1",
+    "axios": "^1.11.0",
+    "express": "^5.1.0",
+    "pino": "^9.9.4",
+    "fs": "0.0.1-security",
+    "jimp": "^1.6.0"
+  }
+}
